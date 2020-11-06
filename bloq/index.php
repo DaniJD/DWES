@@ -1,3 +1,5 @@
+<?php include_once 'utils.php' ?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -14,10 +16,10 @@
             <h1> Sitio - Home</h1>
 
             <a href="nuevo.php"> Nuevo </a>
-            <ul>
-                <li> Este será el primer post</li>
-                <li> Este será el segundo post</li>
-            </ul>
+
+            <?php echo getListPosts(); ?>
+
+            <?php echo getRecentPosts(); ?>
         </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
